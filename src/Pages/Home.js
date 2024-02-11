@@ -2,23 +2,23 @@ import cessna1 from '../cody-fitzgerald-O0Tr0mrzXLA-unsplash.jpg'
 import boulder from '../braden-collum-TFFaIgbBETs-unsplash.jpg'
 import cessna2 from '../nicolas-peyrol-Fpyjqod3M6A-unsplash.jpg'
 import '../App.css';
+import ContactPage from './ContactPage';
 
 function Home() {
   return (
     <div id="ui-container" className="h-auto min-h-screen grid justify-center items-center">
-      <header className="w-full bg-white shadow-md px-4 py-2">
-        <nav>
+      <header className="fill w-full fixed  w-full z-20 top-0 start-0 bg-white shadow-md px-4 py-2">
+        <nav class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <h1 className="text-2xl font-bold">Boulder Flying Club</h1>
           <ul className="flex space-x-4">
             <li><a href="/" className="hover:bg-gray-200 px-2 py-1 rounded">Home</a></li>
-            {/* <li><a href="wb" className="hover:bg-gray-200 px-2 py-1 rounded">Weight and Balance</a></li> */}
             <li><a href="membership" className="hover:bg-gray-200 px-2 py-1 rounded">Memberships</a></li>
             <li><a href="contact" className="hover:bg-gray-200 px-2 py-1 rounded">Contact</a></li>
-            <li><a href="about" className="hover:bg-gray-200 px-2 py-1 rounded">About</a></li>
+            {/* <li><a href="about" className="hover:bg-gray-200 px-2 py-1 rounded">About</a></li> */}
           </ul>
         </nav>
       </header>
-      <main className="container mx-auto my-8">
+      <main className="container mx-auto my-40">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* <div className="flex justify-center items-center"><img src={picsComingSoon}/></div> */}
           <div className="flex justify-center items-center"><img className="w-full h-auto aspect-w-16 aspect-h-9 rounded-lg" src={cessna1} alt="" /></div>
@@ -46,6 +46,7 @@ function Home() {
             <p className="mb-4">Become a part of our enthusiastic community of aviation lovers. Connect with fellow pilots, learn from experienced aviators, and discover new flying opportunities.</p><a href="about" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">About us</a>
           </div>
         </section>
+      <ContactPage className="pt-40"/>
       </main>
       <footer className="bg-gray-200 py-4 px-4 text-center">
         <p className="text-gray-600">© 2024 Boulder Flying Club. All rights reserved.</p>
