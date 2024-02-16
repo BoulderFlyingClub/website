@@ -5,12 +5,12 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import WeightBalance from './Pages/WeightBalance';
 import {
-  createHashRouter,
+  createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
